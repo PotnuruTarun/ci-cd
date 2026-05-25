@@ -22,10 +22,10 @@ jobs:
         pip install -r requirements.txt
     - name: env
 
-      env: |
-        Home: ${{ secrets.HOME }}
+      env: 
+        HOME_SECRET: ${{ secrets.HOME }}
       run: |
-        echo  $Home
+        echo  $HOME_SECRET
 
     
     - name: run app
