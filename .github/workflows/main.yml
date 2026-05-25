@@ -4,19 +4,14 @@ on: push
 
 jobs:
 
-  hello:
+  demo:
+
     runs-on: ubuntu-latest
+
     steps:
-      - name: Step 1
-        run: echo "Hello Tiger"
-      - name: Current Directory
-        run: pwd
 
-      - name: List Files
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Show Files
         run: ls
-
-      - name: Multiple Commands
-        run: |
-          echo "First Command"
-          echo "Second Command"
-          echo "Third Command"
