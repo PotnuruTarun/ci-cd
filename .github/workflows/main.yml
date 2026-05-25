@@ -4,16 +4,11 @@ on:
   push:
     branches:
       - main
-
   workflow_dispatch:
 
 jobs:
-
   demo:
-
     runs-on: ubuntu-latest
-
     steps:
-
       - name: Say Hello
-        run: echo "Triggered"
+        run: echo "Manual trigger working!"
