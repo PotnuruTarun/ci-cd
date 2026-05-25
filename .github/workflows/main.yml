@@ -26,6 +26,7 @@ jobs:
         HOME_SECRET: ${{ secrets.HOME }}
       run: |
         echo  $HOME_SECRET
+        python app.py
 
     
     - name: run app
