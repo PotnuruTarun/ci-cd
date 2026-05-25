@@ -5,10 +5,18 @@ on: push
 jobs:
 
   hello:
-
     runs-on: ubuntu-latest
-
     steps:
+      - name: Step 1
+        run: echo "Hello Tiger"
+      - name: Current Directory
+        run: pwd
 
-      - name: Print Message
-        run: echo "Hello CI/CD"
+      - name: List Files
+        run: ls
+
+      - name: Multiple Commands
+        run: |
+          echo "First Command"
+          echo "Second Command"
+          echo "Third Command"
